@@ -44,4 +44,47 @@ class Telefonbok:
             nytt = input("skriv nytt nummer: ")
             self.kontakter[namn] = nytt
             self.spara()
+            print("uppdaterat")
+        else:
+            print("finns inte")
+
+    def ta_bort(self):
+        namn = input("vem ska tas bort: ")
+        if namn in self.kontakter:
+            del self.kontakter[namn]
+            self.spara()
+            print("borttagen")
+        else:
+            print("finns inte")
+
+    def meny(self):
+        while True:
+            print("\n1 lägg till")
+            print("2 sök")
+            print("3 uppdatera")
+            print("4 ta bort")
+
+            val = input("välj: ")
+            print("uppdaterat")
+        else:
+            print("finns inte")
+
+    def ta_bort(self):
+        namn = input("vem ska tas bort: ")
+        if namn in self.kontakter:
+            del self.kontakter[namn]
+            self.spara()
+            print("borttagen")
+        else:
+            print("finns inte")
+
+    def meny(self):
+        while True:
+            print("\n1 lägg till")
+            print("2 sök")
+            print("3 uppdatera")
+            print("4 ta bort")
+
+            val = input("välj: ")
+
 
